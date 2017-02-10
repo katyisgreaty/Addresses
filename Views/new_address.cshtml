@@ -4,15 +4,25 @@
 
 <h1>Add a new address!</h1>
 <form action="/" method="post">
-    <label for="new-name">Name:</label>
-    <input type="text" name="new-name" id = "new-name">
-    <label for="new-street">Number and Street:</label>
-    <input type="text" name="new-street" id = "new-street">
-    <label for="new-city">City:</label>
-    <input type="text" name="new-city" id = "new-city">
-    <label for="new-state">State:</label>
-    <input type="text" name="new-state" id = "new-state">
-    <label for="new-zip">Zip Code:</label>
-    <input type="int" name="new-zip" id = "new-zip">
+    <div class="row">
+        <label for="new-name" class="label-size">Name:</label>
+        <input type="text" name="new-name" id = "new-name" class="input-size">
+    </div>
+    <div class="row">
+        <label for="new-street" class="label-size">Number and Street:</label>
+        <input type="text" name="new-street" id = "new-street" class="input-size">
+    </div>
+    <div class="row">
+        <label for="new-city" class="label-size">City:</label>
+        <input type="text" name="new-city" id = "new-city" class="input-size">
+    </div>
+    <div class="row">
+        <label for="new-state" class="label-size">State:</label>
+        <input type="text" name="new-state" id = "new-state" class="input-size">
+    </div>
+    <div class="row">
+        <label for="new-zip" class="label-size">Zip Code:</label>
+        <input type="int" name="new-zip" id = "new-zip" class="input-size">
+    </div>
     <button type="submit" class="btn btn-success">Add address</button>
 </form>
