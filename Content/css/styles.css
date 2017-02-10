@@ -33,11 +33,11 @@ button {
 }
 
 .buttoncolor {
-  background-color: white;
+  background-color: #EEB4C9;
   margin-top: 20px;
-  margin-left: -20px;
+  margin-left: -12px;
   font-size: 22px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .main {
@@ -60,13 +60,13 @@ button {
 
 .titles {
   font-family: 'Fredericka the Great', cursive;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 40px;
 }
 
 .links {
   font-family: 'Fredericka the Great', cursive;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 22px;
 }
 
