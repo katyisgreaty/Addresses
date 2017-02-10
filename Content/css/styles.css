@@ -1,7 +1,84 @@
 .label-size {
-  width: 150px;
+  width: 160px;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20px;
+}
+
+.headstyle {
+  background-color: #A1CCC0;
+}
+
+body {
+  background-image: url("http://www.timvandevall.com/wp-content/uploads/2013/05/Lined-Paper-Template-18.jpg");
+}
+
+.scoot {
+  margin-left: 105px;
 }
 
 .input-size {
   width: 55%;
 }
+
+button {
+  font-family: 'Poiret One', cursive;
+  font-size: 28px;
+}
+
+.main {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+
+#raddress {
+  font-size: 100px;
+}
+
+#sub {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#spacebutton {
+  margin-top: 60px;
+}
+
+.titles {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.links {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.addresslist {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 35px;
+}
+
+.addresstext {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 26px;
+}
+
+a {
+    color: black;
+}
+
+
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Walter Turncoat', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Faster One', cursive;
+font-family: 'Ribeye Marrow', cursive;
+font-family: 'Fascinate Inline', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Shadows Into Light Two', cursive;

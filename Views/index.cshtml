@@ -2,14 +2,16 @@
   Layout="Shared/_Layout.cshtml";
 }
 
-<h1>Your Address Book</h1>
-<ul>
-  @foreach (var address in Model)
-  {
-    <li><a href="/addresses/@address.GetId()">@address.GetName()</a></li>
-  }
-</ul>
-<p><a href="/addresses/new">Add another address</a></p>
-<form action="/addresses/cleared" method="post">
-  <button type="submit" name="button">Erase all addresses</button>
-</form>
+<div class="row scoot">
+  <h1 class="titles">Your Raddress Book</h1>
+  <ul>
+    @foreach (var address in Model)
+    {
+      <li><a href="/addresses/@address.GetId()" class="addresslist">@address.GetName()</a></li>
+    }
+  </ul>
+  <p><a href="/addresses/new" class="links">Add another address</a></p>
+  <form action="/addresses/cleared" method="post">
+    <button type="submit" name="button" class="links">Erase all addresses</button>
+  </form>
+</div>

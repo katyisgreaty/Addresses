@@ -1,13 +1,15 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
+<div class="row scoot">
 
-<h1>@Model.GetName()</h1>
-<p>@Model.GetStreet()</p>
-<p>@Model.GetCity(), @Model.GetState() @Model.GetZip()</p>
+  <h1 class="addresslist">@Model.GetName()</h1>
+  <p class="addresstext">@Model.GetStreet()</p>
+  <p class="addresstext">@Model.GetCity(), @Model.GetState() @Model.GetZip()</p>
 
-<p><a href="/addresses/new">Add another address</a></p>
-<p><a href="/">View all addresses</a></p>
+  <p id="spacebutton"><a href="/addresses/new" class="links">Add another address</a></p>
+  <p><a href="/" class="links">View all addresses</a></p>
+</div>
 <!--
 <form action="/addresses/new" method="post">
   <button type="submit" name="button" class="btn btn-success">Add another address</button>
