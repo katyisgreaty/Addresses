@@ -18,7 +18,7 @@ _This is a webpage that allows you to store addresses in an address book. You ca
 
 ## Known Bugs
 
-_If you leave all of the forms blank on the add a new address page, the server returns a 500 error. Also, replacing hrefs with buttons seems to do something strange to the links; it will take it to the correct url but the cshtml file won't load._
+_If you leave any of the forms blank on the add a new address page, the server returns a 500 error (fixed with "required" in the input tag, but that doesn't seem like the simplest fix). Also, replacing hrefs with buttons seems to do something strange to the links; it will take it to the correct url but the cshtml file won't load._
 
 ## Support and contact details
 
