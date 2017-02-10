@@ -1,0 +1,27 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="row scoot">
+
+  <h1 class="titles">Add a new address to @Model["contact"].GetName()</h1>
+  <form action="/" method="post">
+      <div class="row">
+          <label for="address-street" class="label-size">Number and Street:</label>
+          <input type="text" name="address-street" id = "address-street" class="input-size" required>
+      </div>
+      <div class="row">
+          <label for="address-city" class="label-size">City:</label>
+          <input type="text" name="address-city" id = "address-city" class="input-size" required>
+      </div>
+      <div class="row">
+          <label for="address-state" class="label-size">State:</label>
+          <input type="text" name="address-state" id = "address-state" class="input-size" required>
+      </div>
+      <div class="row">
+          <label for="address-zip" class="label-size">Zip Code:</label>
+          <input type="number" name="address-zip" id = "address-zip" class="input-size" required>
+      </div>
+      <button type="submit" class="btn buttoncolor">Add address</button>
+  </form>
+</div>
