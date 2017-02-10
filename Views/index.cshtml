@@ -1,0 +1,11 @@
+<h1>Your Address Book</h1>
+<ul>
+  @foreach (var address in Model)
+  {
+    <li><a href="/addresses/@address.GetId()">@address.GetName()</a></li>
+  }
+</ul>
+<p><a href="/addresses/new">Add another address</a></p>
+<form action="/addresses_cleared" method="post">
+  <button type="submit" name="button">Erase all addresses</button>
+</form>
