@@ -1,5 +1,6 @@
 using Nancy;
 using Addresses.Objects;
+using System;
 using System.Collections.Generic;
 
 namespace Addresses
@@ -23,7 +24,7 @@ namespace Addresses
       };
 
       Post["/"] = _ => {
-        Address newAddress = new Address(Request.Form["new-name"]);
+        Address newAddress = new Address(Request.Form["new-name"], Request.Form["new-street"], Request.Form["new-city"], Request.Form["new-state"], Request.Form["new-zip"]);
         List<Address> allAddresses = Address.GetAll();
         return View["index.cshtml", allAddresses];
       };

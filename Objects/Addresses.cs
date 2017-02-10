@@ -11,15 +11,15 @@ namespace Addresses.Objects
     private int _id;
     private static List<Address> _instances = new List<Address>{};
 
-    public Address(string addressName, string addressStreet, string addressCity, string addressState, int addressZip)
+    public Address(string name, string street, string city, string state, int zip)
     {
-      _name = addressName;
-      _street = addressStreet;
-      _city = addressCity;
-      _state = addressState;
-      _zip = addressZip;
+      _name = name;
+      _street = street;
+      _city = city;
+      _state = state;
+      _zip = zip;
       _instances.Add(this);
-      _id = instances.Count;
+      _id = _instances.Count;
     }
 //Getters and Setters
     public string GetName()
@@ -70,6 +70,11 @@ namespace Addresses.Objects
     public void SetZip(int newZip)
     {
       _zip = newZip;
+    }
+
+    public int GetId()
+    {
+      return _id;
     }
 //Other Methods
     public static List<Address> GetAll()
