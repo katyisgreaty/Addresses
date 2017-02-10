@@ -1,6 +1,17 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
 <h1>@Model.GetName()</h1>
 <p>@Model.GetStreet()</p>
 <p>@Model.GetCity(), @Model.GetState() @Model.GetZip()</p>
 
 <p><a href="/addresses/new">Add another address</a></p>
 <p><a href="/">View all addresses</a></p>
+<!--
+<form action="/addresses/new" method="post">
+  <button type="submit" name="button" class="btn btn-success">Add another address</button>
+</form>
+<form action="/" method="post">
+  <button type="submit" name="button" class="btn btn-warning">View all addresses</button>
+</form> -->

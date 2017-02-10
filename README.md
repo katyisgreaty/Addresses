@@ -18,7 +18,7 @@ _This is a webpage that allows you to store addresses in an address book. You ca
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Replacing hrefs with buttons seems to do something strange to the links; it will take it to the correct url but the cshtml file won't load._
 
 ## Support and contact details
 

@@ -1,3 +1,7 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
 <h1>Add a new address!</h1>
 <form action="/" method="post">
     <label for="new-name">Name:</label>
@@ -10,5 +14,5 @@
     <input type="text" name="new-state" id = "new-state">
     <label for="new-zip">Zip Code:</label>
     <input type="int" name="new-zip" id = "new-zip">
-    <button type="submit">Add address</button>
+    <button type="submit" class="btn btn-success">Add address</button>
 </form>
