@@ -21,7 +21,7 @@ namespace Addresses.Objects
       _instances.Add(this);
       _id = _instances.Count;
     }
-//Getters and Setters
+    //Getters and Setters
     public string GetName()
     {
       return _name;
@@ -76,7 +76,7 @@ namespace Addresses.Objects
     {
       return _id;
     }
-//Other Methods
+    //Other Methods
     public static List<Address> GetAll()
     {
       return _instances;
@@ -92,5 +92,16 @@ namespace Addresses.Objects
       return _instances[searchId-1];
     }
 
+    public static Address SearchByName(string searchName)
+    {
+      foreach (Address currentAddress in _instances)
+      {
+        if(currentAddress.GetName() == searchName)
+        {
+          return currentAddress;
+        }
+      }
+      return null;
+    }
   }
 }

@@ -1,0 +1,11 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<h1 class="titles">Search for an artist</h1>
+<form action="/search_results" method="post">
+  <label for="search-name">contact name</label>
+  <input id="search-name" name="search-name" type=text>
+  <button type="submit">Search!</button>
+</form>
+<p><a href="/">Back Home</a></p>

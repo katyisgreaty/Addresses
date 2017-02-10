@@ -34,6 +34,14 @@ namespace Addresses
         return View["addresses_cleared.cshtml"];
       };
 
+      Get["/search_by_name"] = _ => {
+        return View["search_by_name.cshtml"];
+      };
+
+      Post["/search_results"] = _ => {
+        Address foundAddress = Address.SearchByName(Request.Form["search-name"]);
+        return View["search_results.cshtml", foundAddress];
+      };
     }
   }
 }
