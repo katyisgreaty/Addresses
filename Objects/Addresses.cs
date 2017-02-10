@@ -3,17 +3,16 @@ using System.Collections.Generic;
 namespace Addresses.Objects
 {
   public class Address {
-    private string _name;
+    // private string _name;
     private string _street;
     private string _city;
     private string _state;
     private int _zip;
     private int _id;
-    private static List<Address> _instances = new List<Address>{};
+    private static List<Address> _instances = new List<Address> {};
 
-    public Address(string name, string street, string city, string state, int zip)
+    public Address(string street, string city, string state, int zip)
     {
-      _name = name;
       _street = street;
       _city = city;
       _state = state;
@@ -22,15 +21,15 @@ namespace Addresses.Objects
       _id = _instances.Count;
     }
 //Getters and Setters
-    public string GetName()
-    {
-      return _name;
-    }
-
-    public void SetName(string newName)
-    {
-      _name = newName;
-    }
+    // public string GetName()
+    // {
+    //   return _name;
+    // }
+    //
+    // public void SetName(string newName)
+    // {
+    //   _name = newName;
+    // }
 
     public string GetStreet()
     {
