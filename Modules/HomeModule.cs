@@ -10,29 +10,35 @@ namespace Addresses
     public HomeModule()
     {
       Get ["/"] = _ => {
-        List<Address> allAddresses = Address.GetAll();
-        return View["index.cshtml", allAddresses];
+        var allContacts = Contact.GetAll();
+        return View["index.cshtml", allContacts];
       };
 
-      Get["/addresses/new"] = _ => {
-        return View["new_address.cshtml"];
+      Get["/contacts/new"] = _ => {
+        return View["new_contact.cshtml"];
       };
 
-      Get["/addresses/{id}"] = parameters => {
-        Address address = Address.Find(parameters.id);
-        return View["address.cshtml", address];
+      Get["/contacts/{id}"] = parameters => {
+        Dictionary<string, object> model = new Dictionary<string, object>();
+        var selectedContact = Contact.Find(parameters.id);
+        var contactAddresses = selectedContact.GetAddresses();
+        model.Add("contact", selectedContact);
+        model.Add("addresses", contactAddresses);
+        return View["contact.cshtml", model];
       };
 
       Post["/"] = _ => {
-        Address newAddress = new Address(Request.Form["new-name"], Request.Form["new-street"], Request.Form["new-city"], Request.Form["new-state"], Request.Form["new-zip"]);
-        List<Address> allAddresses = Address.GetAll();
-        return View["index.cshtml", allAddresses];
+        var newContact = new Contact(Request.Form["contact-name"]);
+        var allContacts = Contact.GetAll();
+        return View["index.cshtml", allContacts];
       };
 
-      Post["/addresses/cleared"] = _ => {
-        Address.ClearAll();
-        return View["addresses_cleared.cshtml"];
+      Post["/contacts/cleared"] = _ => {
+        Contact.ClearAll();
+        return View["contacts_cleared.cshtml"];
       };
+
+
 
     }
   }

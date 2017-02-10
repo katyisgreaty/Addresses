@@ -5,13 +5,13 @@
 <div class="row scoot">
   <h1 class="titles">Your <img class="smallpic" src="http://data.whicdn.com/images/91662388/large.png" alt="RAD logo">dress Book</h1>
   <ul>
-    @foreach (var address in Model)
+    @foreach (var contact in Model)
     {
-      <li><a href="/addresses/@address.GetId()" class="addresslist">@address.GetName()</a></li>
+      <li><a href="/contacts/@contact.GetId()" class="contactlist">@contact.GetName()</a></li>
     }
   </ul>
-  <p><a href="/addresses/new" class="links">Add another address</a></p>
-  <form action="/addresses/cleared" method="post">
-    <button type="submit" name="button" class="links">Erase all addresses</button>
+  <p><a href="/contacts/new" class="links">Add another contact</a></p>
+  <form action="/contacts/cleared" method="post">
+    <button type="submit" name="button" class="links">Erase all contacts</button>
   </form>
 </div>
