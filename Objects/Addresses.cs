@@ -11,7 +11,7 @@ namespace Addresses.Objects
     private int _id;
     private static List<Address> _instances = new List<Address>{};
 
-    public Address(string addressName)
+    public Address(string addressName, string addressStreet, string addressCity, string addressState, int addressZip)
     {
       _name = addressName;
       _street = addressStreet;
