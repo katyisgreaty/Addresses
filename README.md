@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a webpage that allows you to store addresses in an address book. You can add new addresses, click on individual addresses to see their details, and clear all addresses to wipe the slate clean and start again._
+_This is a webpage that allows you to store addresses in an address book. You can add new addresses, click on individual addresses to see their details, and clear all addresses to wipe the slate clean and start again. You can see the github repository for this project at https://github.com/katyisgreaty/Addresses_
 
 ## Setup/Installation Requirements
 
