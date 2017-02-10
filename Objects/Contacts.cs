@@ -8,7 +8,7 @@ namespace Addresses.Objects
     private string _name;
     private string _phone;
     private int _id;
-    private List<Contact> _addresses;
+    private List<Address> _addresses;
 
     public Contact(string contactName, string contactPhone)
     {

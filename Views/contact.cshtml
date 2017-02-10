@@ -2,7 +2,7 @@
   Layout="Shared/_Layout.cshtml";
 }
 
-<h1>Here are the addresses listed for <a href='/contacts/@contact.GetId()'>@contact.GetName()</a>:</h1>
+<h1>Here are the addresses listed for that contact:</h1>
 <ol>
 @foreach (var address in @Model["addresses"])
 {
