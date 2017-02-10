@@ -19,10 +19,25 @@ body {
 .input-size {
   width: 55%;
 }
+img {
+  width: 270px;
+}
+
+.smallpic {
+  width: 130px;
+}
 
 button {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Fredericka the Great', cursive;
   font-size: 28px;
+}
+
+.buttoncolor {
+  background-color: white;
+  margin-top: 20px;
+  margin-left: -20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .main {
@@ -52,7 +67,7 @@ button {
 .links {
   font-family: 'Fredericka the Great', cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .addresslist {
